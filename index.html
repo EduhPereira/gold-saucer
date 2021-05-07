@@ -4,43 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./home-style.css">
     <title>Gold Saucer</title>
 </head>
 <body>
-    <header class="home__header">
-        <h1 class="home__title">gold saucer</h1>
+    <nav id="menu" class="menu hidden">
+        <div id="close" class="closeBtn">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="menu__list">
+            <li class="menu__title">
+                Menu
+            </li> 
+            <li>
+                <a href="#">home</a>
+            </li>
+
+            <li>
+                <a href="./games.html">games</a>
+            </li>
+
+            <li>
+                <a href="./secrets.html">secrets</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1 class="header__title">gold saucer</h1>
+        <div id="open" class="menu__icon">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
 
     <main class="home__content">
 
-        <h2 class="desktop__title subtitle">desktop games</h2>
-        <div class="desktop__games">
-            <div class="desktop__row">
-                <div class="snake__icon icon"></div>
-            </div>
+        <div class="characters">
+            <iframe src="https://giphy.com/embed/UNzx8UnRmc47u" class="character character--1" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
-            <div class="desktop__row--2">
-                <div class="space-invaders__icon icon"></div>
-                <div class="another-game__icon icon"></div>
-            </div>
+            <iframe src="https://giphy.com/embed/ABv8Kt5lgBP56" class="character character--2" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+            <iframe src="https://giphy.com/embed/oLNZ3mnE7Zgek" class="character character--3" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
 
-        <h2 class="luck__title subtitle">luck games</h2>
-        <div class="luck__games">
-            <div class="luck__row">
-                <div class="roll__icon icon"></div>
-                <div class="blackjack__icon icon"></div>
-            </div>
-            <div class="luck__row--2">
-                <div class="rock-paper-scissor__icon icon"></div>
-            </div>
-        </div>
+        <header class="home__header">
+            <h2>welcome</h2>
+            <span>to</span>
+            <h1>gold saucer</h1>
+        </header>
 
-        <!-- <div class="special__game">
-            <button class="special-game__button">special game</button>
-        </div> -->
-
+        <ul class="home__list">
+            <li>have fun</li>
+            <li>test your luck</li>
+            <li>take a look on 'secrets' section</li>
+        </ul>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>

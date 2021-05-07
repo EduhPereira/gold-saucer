@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+  background-color: black;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  font-size: 25px;
+
+  color: goldenrod;
+  border-bottom: 1px solid goldenrod;
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.menu__icon {
+  margin: -6px 0 0 0;
+  cursor: pointer;
+}
+
+.menu {
+  color: #dededde1;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+.closeBtn {
+  float: right;
+  font-size: 25px;
+  margin: 5px 10px 0 0;
+  cursor: pointer;
+}
+
+.menu__title {
+  text-transform: uppercase;
+  color: goldenrod;
+  font-size: 20px;
+}
+
+.menu__list {
+  text-transform: uppercase;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu__list li:not(:first-child) {
+  margin: 10px 0 0;
+}
+
+a {
+  color: #dededde1;
+  padding-bottom: 5px;
+  transition: all 0.2s linear;
+}
+
+a:hover {
+  border-bottom: 2px solid goldenrod;
+}
+
+@keyframes fromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appears {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .menu__title {
+    font-size: 25px;
+  }
+
+  .menu__list li:not(:first-child) {
+    margin: 25px 0 0;
+  }
+}

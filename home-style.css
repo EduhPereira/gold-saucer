@@ -1,0 +1,73 @@
+@import url('./default-style.css');
+
+.home__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+
+    color: #dedede;
+}
+
+.characters{
+    display: flex;
+    margin: 30px 0 50px;
+}
+
+.character{
+    width: 100px;
+    height: 100px;
+
+    transition: all .4s ease;
+}
+
+.character--1{
+    animation: fromLeft 1s linear;
+}
+
+.character--2{
+    animation: fromTop 1s linear;
+}
+
+.character--3{
+    animation: fromRight 1s linear;
+}
+
+.character:hover{
+    transform: scale(1.1);
+}
+
+.home__header{
+    text-transform: uppercase;
+    margin: 0 0 40px;
+
+    color: goldenrod;
+}
+
+.home__header h2{
+    margin-bottom: 15px;
+}
+
+.home__header h1{
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.home__list{
+    text-transform: uppercase;
+
+    animation: appears 2s ease;
+}
+
+.home__list li:not(:first-child){
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+@media only screen and (min-width:768px){
+    .character{
+        width: 200px;
+        height: 200px;
+    }
+}

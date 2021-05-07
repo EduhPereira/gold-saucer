@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./games-style.css">
+    <title>Games</title>
+</head>
+<body>
+    <nav id="menu" class="menu hidden">
+        <div id="close" class="closeBtn">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="menu__list">
+            <li class="menu__title">
+                Menu
+            </li> 
+            <li>
+                <a href="./index.html">home</a>
+            </li>
+
+            <li>
+                <a href="#">games</a>
+            </li>
+
+            <li>
+                <a href="./secrets.html">secrets</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1 class="header__title">gold saucer</h1>
+        <div id="open" class="menu__icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+
+    <main class="home__content">
+
+        <h2 class="luck__title subtitle">gambling</h2>
+        <div class="luck__games">
+            <div class="luck__row">
+
+                <div class="rock-paper-scissor__icon icon">
+                    <img src="./images/rps-cover.jpg" alt="">
+                </div>
+
+                <div class="blackjack__icon icon">
+                    <img src="./images/blackjack-cover.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="luck__row--2">
+                <div class="jackpot__icon icon">
+                    <img src="./images/jackpot-cover.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <h2 class="desktop__title subtitle">desktop games</h2>
+        <div class="desktop__games">
+            <div class="desktop__row">
+                <div class="space-invaders__icon icon">
+                    <img src="./images/space-invaders-cover.png" alt="">
+                </div>
+            </div>
+
+            <div class="desktop__row--2">
+                <div class="snake__icon icon">
+                    <img src="./images/snake-cover.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
