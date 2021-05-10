@@ -1,0 +1,142 @@
+@import url('../../default-style.css');
+
+/* VARIÁVEIS */
+:root{
+    --header-text-color: #fff;
+    --body-title-color:whitesmoke;
+    --border-color:gray;
+
+    --button-background-color:#ac2e2f;
+    --button-hover-background-color:#ce1b1b;
+
+    --result-border-color:whitesmoke;
+    --result-text-color:whitesmoke;
+
+    --desktop-font-size:16px;
+    --mobile-font-size:12px;
+}
+
+/* MAIN */
+
+.jackpot__header{
+    color: var(--header-text-color);
+    font-family: "Press Start 2P", cursive;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.slots{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.slots figure{
+    width: 30vw;
+    margin: 1px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+figure img{
+    max-width: 100%;
+}
+
+#play{
+    border:1px solid var(--border-color);
+    border-radius: 3px;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: var(--button-background-color);
+    color: var(--body-title-color);
+    padding: 10px;
+    font-family: "Press Start 2P", cursive;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+}
+
+#play:hover{
+    background-color: var(--button-hover-background-color);
+
+}
+
+#result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: 1px solid var(--result-border-color);
+    color: var(--result-text-color);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 5px;
+    font-family: "Press Start 2P", cursive;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (min-width:768px){
+    /* GERAL */
+
+    body{
+        font-size: var(--desktop-font-size);
+    }
+
+    /* HEADER */
+
+    .desktop{
+        display: unset;
+    }
+
+    #sub-menu{
+        display: none;
+    }
+
+    header ul li a{
+        margin-right: 15px;
+        text-transform: uppercase;
+    }
+
+    /* MAIN */
+
+    main{
+        padding: 0;
+        width: 100vw;
+        justify-content: center;
+    }
+    
+    .banner figure{
+        width: 30%;
+    }
+    
+    .slots figure{
+        width: 9vw;
+    }
+    
+    figure img{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width:1024px){
+    .banner figure{
+        width: 15%;
+    }
+}

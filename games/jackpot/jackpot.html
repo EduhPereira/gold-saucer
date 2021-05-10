@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Jackpot</title>
+    <link rel="stylesheet" href="./jackpot-style.css">
+</head>
+
+<body>
+    <nav id="menu" class="menu hidden">
+        <div id="close" class="closeBtn">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="menu__list">
+            <li class="menu__title">
+                Menu
+            </li> 
+            <li>
+                <a href="../../index.html">home</a>
+            </li>
+
+            <li>
+                <a href="../../games.html">games</a>
+            </li>
+
+            <li>
+                <a href="../../secrets.html">secrets</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1 class="header__title">gold saucer</h1>
+        <div id="open" class="menu__icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>     
+        <section class="game">
+            <h1 class="jackpot__header">jackpot</h1>
+
+            <div class="slots">
+                <div class="slot1">
+                    <figure>
+                        <img src="./jackpot-images/group.png" alt="" id="slot1">
+                    </figure>
+                </div>
+    
+                <div class="slot2">
+                    <figure>
+                        <img src="./jackpot-images/group.png" alt="" id="slot2">
+                    </figure>
+                </div>
+    
+                <div class="slot3">
+                    <figure>
+                        <img src="./jackpot-images/group.png" alt="" id="slot3">
+                    </figure>
+                </div>
+            </div>
+    
+            <button id="play">roll</button>
+            <div id="result"></div>
+        </section>
+    </main>
+
+    <script src="../../script.js"></script>
+    <script src="./jackpot-script.js"></script>
+</body>
+
+</html>

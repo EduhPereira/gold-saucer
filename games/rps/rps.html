@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./rps-style.css">
+</head>
+
+<body>
+    <nav id="menu" class="menu hidden">
+        <div id="close" class="closeBtn">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="menu__list">
+            <li class="menu__title">
+                Menu
+            </li> 
+            <li>
+                <a href="../../index.html">home</a>
+            </li>
+
+            <li>
+                <a href="../../games.html">games</a>
+            </li>
+
+            <li>
+                <a href="../../secrets.html">secrets</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1 class="header__title">gold saucer</h1>
+        <div id="open" class="menu__icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="rps__header">rock paper scissors</h1>
+
+        <div class="slots">
+            <div class="slot1">
+                <figure>
+                    <img src="./rps-images/rock-paper-scissors.png" alt="" id="player">
+                </figure>
+            </div>
+
+            <div class="slot3">
+                <figure>
+                    <img src="./rps-images/rock-paper-scissors.png" alt="" id="machine">
+                </figure>
+            </div>
+        </div>
+
+        <div class="options">
+            <button id="rock"><img src="./rps-images/rock.png" alt=""></button>
+            <button id="paper"><img src="./rps-images/paper.png" alt=""></button>
+            <button id="scissor"><img src="./rps-images/scissor.png" alt=""></button>
+        </div>
+
+        <button id="play">play</button>
+        <div id="result"></div>
+
+    </main>
+
+    <script src="../../script.js"></script>
+    <script src="./rps-script.js"></script>
+</body>
+
+</html>
