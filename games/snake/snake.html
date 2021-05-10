@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./snake-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script defer src="./snake-script.js"></script>
+    <title>Snake-Game</title>
+</head>
+<body>
+
+    <nav id="menu" class="menu hidden">
+        <div id="close" class="closeBtn">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul class="menu__list">
+            <li class="menu__title">
+                Menu
+            </li> 
+            <li>
+                <a href="../../index.html">home</a>
+            </li>
+
+            <li>
+                <a href="../../games.html">games</a>
+            </li>
+
+            <li>
+                <a href="../../secrets.html">secrets</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <h1 class="header__title">gold saucer</h1>
+        <div id="open" class="menu__icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section id="easter-egg" class="easter-egg hidden">
+        <p id="scr-label" class="scr-label hidden">points</p>
+        <p id="scr-value" class="scr-value hidden">0</p>
+
+        <figure id="easter-egg__figure" class="easter-egg__figure hidden">
+            <iframe src="https://giphy.com/embed/S5hgsw4iU6nMUXJAKd" class="easter-egg__icon" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </figure>
+        <h1 id="easter-egg__title" class="easter-egg__title hidden">a wild easter egg appears</h1>
+        <p id="easter-egg__paragraph" class="easter-egg__paragraph hidden">davis - codigo - circo</p>
+        <button id="easter-egg__button" class="easter-egg__button">i got</button>
+    </section>
+
+    <main id="main-content">
+
+        <h1 class="title">Snake - 8 bits</h1>
+
+        <section class="game">
+            <div class="instructions">
+                <h2 class="subtitle">instructions</h2>
+                <ul class="instructions__list">
+                    <li>use the arrows to move</li>
+                    <li>collect the food</li>
+                    <li>dont eat yourself</li>
+                </ul>
+            </div>
+
+            <div class="game__board">
+                <canvas id="snake" width="512" height="512"></canvas>
+                <div class="game__board__buttons">
+                    <button class="easy" id="easy">easy</button>
+                    <button class="normal" id="normal">normal</button>
+                    <button class="hard" id="hard">hard</button>
+                </div>
+            </div>
+
+            <div class="scoreboard">
+                <h2 class="subtitle subtitle__score">scoreboard</h2>
+                <div class="score" id="score">0</div>
+                <figure>
+                    <img src="" alt="">
+                </figure>
+            </div> 
+        </section>
+    </main>
+
+    <script src="../../script.js"></script>
+</body>
+</html>

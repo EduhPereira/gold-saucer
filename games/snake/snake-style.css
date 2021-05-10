@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("../../default-style.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: square;
+  outline: none;
+}
+
+:root {
+  --background-color-1: black;
+  --background-color-2: lightgreen;
+  --text-color: whitesmoke;
+  --border-color: black;
+  --easyBtn-hover-background-color: green;
+  --normalBtn-hover-background-color: goldenrod;
+  --hardBtn-hover-background-color: red;
+  --scoreboard-background-color: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  color: var(--text-color);
+}
+
+.easter-egg {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 100px 0 0;
+  padding: 10px 10px;
+  background-color: #000;
+
+  text-align: center;
+}
+
+.scr-label{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 30px 0 20px;
+}
+
+.scr-value{
+    font-size: 20px;
+}
+
+.easter-egg__icon {
+  width: 150px;
+  height: 150px;
+
+  animation: appears 3s linear;
+}
+
+.easter-egg__title {
+  margin: 30px;
+  text-transform: uppercase;
+}
+
+.easter-egg__paragraph {
+  text-transform: uppercase;
+  border: 5px dotted goldenrod;
+  padding: 10px 5px;
+
+  font-size: 12px;
+}
+
+.easter-egg__button {
+  margin: 25px 0 0;
+  border-radius: 5px;
+  background-color: rgb(158, 120, 23);
+}
+
+.easter-egg__button:hover {
+  transform: translateY(-6px);
+  background-color: goldenrod;
+}
+
+.easter-egg__button:active {
+  transform: translateY(1px);
+}
+
+.game {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 0 10px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 25px;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  font-size: 15px;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 33vw;
+
+  font-size: 13px;
+}
+
+.instructions__img {
+  width: 190px;
+  height: 170px;
+  margin: 40px 0 40px;
+}
+
+.instructions__list {
+  font-weight: 500;
+}
+
+.instructions__list li {
+  margin: 10px 0;
+}
+
+.game__board {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+#snake {
+  border: 3px solid var(--border-color);
+  background-image: url("./snake-images/initial-screen.png");
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  border: 1px solid goldenrod;
+}
+
+.game__board__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 0;
+}
+
+button {
+  text-transform: uppercase;
+  font-family: "Press Start 2P", cursive;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+  border: 3px solid var(--border-color);
+
+  transition: all 0.3s linear;
+}
+
+button:hover {
+  color: white;
+  transform: translateY(6px);
+}
+
+.easy:hover {
+  background-color: var(--easyBtn-hover-background-color);
+}
+
+.normal:hover {
+  background-color: var(--normalBtn-hover-background-color);
+}
+
+.hard:hover {
+  background-color: var(--hardBtn-hover-background-color);
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33vw;
+
+  font-size: 15px;
+}
+
+.subtitle__score {
+  margin: 10px 0;
+}
+
+.score {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+
+  background-color: var(--scoreboard-background-color);
+}
+
+.hidden{
+    display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .game {
+    flex-direction: row;
+  }
+
+  .game__board {
+    margin: 0;
+  }
+
+  #snake {
+    width: 33vw;
+  }
+
+  .game__board__buttons {
+    flex-direction: row;
+  }
+
+  button:not(:last-child) {
+    margin-right: 10px;
+  }
+}
