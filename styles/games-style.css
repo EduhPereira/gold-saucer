@@ -1,5 +1,10 @@
 @import url("./default-style.css");
 
+:root{
+  --subtitle-color:#fff;
+  --icon-border-color:goldenrod;
+}
+
 .home__content {
   display: flex;
   flex-direction: column;
@@ -15,7 +20,7 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 15px;
-  color: #fff;
+  color: var(--subtitle-color);
 
   animation: appears 2.5s ease-in;
 }
@@ -29,9 +34,7 @@ main a:hover{
 }
 
 .icon {
-  border: 1px solid goldenrod;
-  background-color: darkred;
-
+  border: 1px solid var(--icon-border-color);
   transition: all 0.2s ease-out;
 }
 
@@ -119,25 +122,6 @@ main a:hover{
   height: 100%;
 }
 
-.special__game {
-  width: 100%;
-}
-
-.special-game__button {
-  font-family: "Press Start 2P", cursive;
-
-  width: 100%;
-  margin: 20px 0 0 0;
-  padding: 10px;
-  border: none;
-  border-radius: 3px;
-
-  background-color: goldenrod;
-  color: #fff;
-
-  text-transform: uppercase;
-  font-size: 15px;
-}
 
 @media only screen and (min-width: 768px) {
   .subtitle{

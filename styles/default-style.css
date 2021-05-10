@@ -9,11 +9,19 @@
 }
 
 :root {
+  --body-bg-color:#000;
+  --header-color:goldenrod;
+  --header-border-color:goldenrod;
+  --menu-color:#dedede;
+  --menu-bg-color:rgba(0, 0, 0, 0.95);
+  --menu-title-color:goldenrod;
+  --link-color:#dedede;
+  --link-border-color:goldenrod;
 }
 
 body {
   font-family: "Press Start 2P", cursive;
-  background-color: black;
+  background-color: var(--body-bg-color);
   position: relative;
 }
 
@@ -29,8 +37,8 @@ body {
   padding: 15px 10px;
   font-size: 25px;
 
-  color: goldenrod;
-  border-bottom: 1px solid goldenrod;
+  color: var(--header-color);
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 .header__title {
@@ -44,13 +52,13 @@ body {
 }
 
 .menu {
-  color: #dededde1;
+  color: var(--menu-color);
   position: absolute;
 
   width: 100%;
   height: 100%;
 
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: var(--menu-bg-color);
 }
 
 .closeBtn {
@@ -62,7 +70,7 @@ body {
 
 .menu__title {
   text-transform: uppercase;
-  color: goldenrod;
+  color: var(--menu-title-color);
   font-size: 20px;
 }
 
@@ -81,13 +89,13 @@ body {
 }
 
 a {
-  color: #dededde1;
+  color: var(--link-color);
   padding-bottom: 5px;
   transition: all 0.2s linear;
 }
 
 a:hover {
-  border-bottom: 2px solid goldenrod;
+  border-bottom: 2px solid var(--link-border-color);
 }
 
 @keyframes fromLeft {

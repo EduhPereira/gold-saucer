@@ -1,5 +1,14 @@
 @import url('./default-style.css');
 
+:root{
+    --home-color:#dedede;
+    --header-color:goldenrod;
+    --btn-bg-color:rgb(158, 120, 23);
+    --btn-bg-hover-color:goldenrod;
+    --btn-hover-color:#fff;
+}
+
+
 .home__content{
     height: 90vh;
     display: flex;
@@ -8,7 +17,7 @@
     text-align: center;
     padding: 10px;
 
-    color: #dedede;
+    color: var(--home-color);
 }
 
 .characters{
@@ -41,9 +50,9 @@
 
 .home__header{
     text-transform: uppercase;
-    margin: 0 0 40px;
+    margin: 0 0 30px;
 
-    color: goldenrod;
+    color: var(--header-color);
 }
 
 .home__header h2{
@@ -64,6 +73,26 @@
 .home__list li:not(:first-child){
     margin-top: 15px;
     font-size: 15px;
+}
+
+.home__button{
+    text-transform: uppercase;
+    margin: 20px 0 0;
+    padding: 8px 10px;
+    width: 150px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+
+    font-family: "Press Start 2P", cursive;
+    background-color: var(--btn-bg-color);
+    transition: all .3s linear;
+}
+
+.home__button:hover{
+    background-color: var(--btn-bg-hover-color);
+    color: var(--btn-hover-color);
+    transform: scale(1.1);
 }
 
 @media only screen and (min-width:768px){
